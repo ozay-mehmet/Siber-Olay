@@ -1,0 +1,289 @@
+:root {
+    --primary: #4361ee;
+    --primary-hover: #3a56d4;
+    --secondary: #f72585;
+    --dark: #1a1a2e;
+    --light: #f8f9fa;
+    --success: #4cc9f0;
+    --error: #f72585;
+    --warning: #f8961e;
+    --border-radius: 14px;
+    --shadow: 0 6px 12px rgba(67, 97, 238, 0.07), 0 10px 28px rgba(67, 97, 238, 0.09);
+    --transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #334155;
+    min-height: 100vh;
+    animation: bgFadeIn 1.2s;
+}
+
+@keyframes bgFadeIn {
+    from { background: #fff; }
+    to { background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); }
+}
+
+.form-card {
+    background: white;
+    max-width: 640px;
+    margin: 2.5rem auto 2rem auto;
+    padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(67, 97, 238, 0.07);
+    position: relative;
+    overflow: hidden;
+    animation: cardPopIn 1.1s;
+}
+
+@keyframes cardPopIn {
+    0% { opacity: 0; transform: scale(0.93) translateY(35px); }
+    80% { opacity: 1; transform: scale(1.025) translateY(-7px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+    border-radius: 0 8px 8px 0;
+    animation: gradientSlide 2.5s infinite alternate;
+}
+
+@keyframes gradientSlide {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.2); }
+}
+
+h2 {
+    color: #1e293b;
+    margin-bottom: 1.75rem;
+    font-size: 2rem;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 0.75rem;
+    letter-spacing: 1px;
+    animation: fadeInDown 1.1s;
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 2px;
+    animation: underlineGrow 1.2s;
+}
+
+@keyframes underlineGrow {
+    0% { width: 0; }
+    100% { width: 60px; }
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #475569;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    transition: color 0.3s;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.95rem 1.25rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1.05rem;
+    transition: var(--transition);
+    background: #f8fafc;
+    color: #334155;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.13);
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 30px auto 20px auto;
+    padding: 0 15px;
+    animation: fadeIn 1.2s;
+}
+
+.incidents-list-card {
+    background: white;
+    padding: 28px 25px 22px 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-top: 36px;
+    animation: cardPopIn 1.2s;
+}
+
+.incident-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeInUp 1.1s;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.incident-table th,
+.incident-table td {
+    border: 1px solid #e0e7ff;
+    padding: 12px 10px;
+    text-align: left;
+}
+
+.incident-table th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.incident-table tr:nth-child(even) {
+    background-color: #f2f6ff;
+}
+
+.incident-table tr:hover {
+    background: #e0e7ff;
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 0.95rem 2.1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background: var(--error);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 0.98em;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-delete:hover {
+    background: #d90429;
+    transform: scale(1.06);
+}
+
+.message-container {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid;
+    animation: fadeIn 1s;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.message-container.error {
+    color: var(--error);
+    background: rgba(239, 35, 60, 0.08);
+    border-left-color: var(--error);
+}
+
+.message-container.success {
+    color: var(--success);
+    background: rgba(46, 204, 113, 0.09);
+    border-left-color: var(--success);
+}
+
+@media (max-width: 900px) {
+    .form-card, .incidents-list-card {
+        max-width: 98vw;
+        padding: 1.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-card, .incidents-list-card {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem auto;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .incident-table th, .incident-table td {
+        font-size: 0.9rem;
+        padding: 8px 6px;
+    }
+}
