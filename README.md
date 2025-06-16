@@ -60,7 +60,7 @@ Siber Güvenlik Olay Yönetim Sistemi, güvenlik olaylarını tespit etme, anali
 
 4. **Veritabanı yapılandırmasını yapın:**
 
-   `.env` dosyasını oluşturun ve veritabanı bağlantı bilgilerini girin.
+   `db.php` dosyasını oluşturun ve veritabanı bağlantı bilgilerini girin.
 
 5. **Veritabanı migrasyonlarını çalıştırın:**
 
