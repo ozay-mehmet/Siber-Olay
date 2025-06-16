@@ -1,9 +1,4 @@
 <div align="center">
-
-  <a href="https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/siber.jpeg" target="_blank" rel="noopener noreferrer">
-    <img src="images/siber.jpeg" alt="Proje Logosu" width="80" height="80" />
-  </a>
-
   <h1>Siber Güvenlik Olay Yönetim Sistemi</h1>
 
   <p>
