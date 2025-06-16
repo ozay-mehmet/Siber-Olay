@@ -2,7 +2,7 @@
   <h1>Siber Güvenlik Olay Yönetim Sistemi</h1>
 
   <p>
-    Siber güvenlik olaylarını etkili bir şekilde yönetmek için geliştirilmiş kapsamlı bir sistem.
+    Olay tespiti, analiz ve yanıt süreçlerini optimize eden, güvenlik operasyonlarını daha etkili hale getirmek üzere tasarlanmış bir sistem.
   </p>
 
   <p>
@@ -26,6 +26,28 @@ Siber Güvenlik Olay Yönetim Sistemi, güvenlik olaylarını tespit etme, anali
 - **Backend:** PHP
 - **Frontend:** JavaScript, HTML, CSS
 - **Veritabanı:** MySQL
+
+---
+
+## 🖼️ Ekran Görüntüleri
+
+### 1. Kullanıcı Kayıtı
+![Kayıt Oluştur](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/register.png)
+
+### 2. Login Sayfası
+![Login](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/login.png)
+
+### 3. Anasayfa
+![Anasayfa](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/anasayfa.png)
+
+### 4. Olay Listesi 
+![Olay Listesi](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/olaylar.png)
+
+### 5. Olay Bildirme
+![Olay Bildir](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/bildir.png)
+
+### 56 Olay Ayrıntıları 
+![Olay Ayrıntıları](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/ayr%C4%B1nt%C4%B1lar.png)
 
 ---
 
