@@ -1,8 +1,8 @@
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/mehmet-ozay/]
+[![LinkedIn]][https://www.linkedin.com/in/mehmet-ozay/]
 
 <br />
 <div align="center">
-  <a href="https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/">
+  <a href="https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/siber.jpeg">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
