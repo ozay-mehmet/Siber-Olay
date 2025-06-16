@@ -6,7 +6,7 @@
   </p>
 
   <p>
-    <a href="#" style="text-decoration:none; padding:8px 16px; background-color:#0077b5; color:white; border-radius:4px;">Canlı Site</a>
+    <a href="http://95.130.171.20/~st22360859062/public/register.php" style="text-decoration:none; padding:8px 16px; background-color:#0077b5; color:white; border-radius:4px;">Canlı Site</a>
     &nbsp;&middot;&nbsp;
     <a href="https://www.youtube.com/watch?v=fNUr3vvIlM0" target="_blank" rel="noopener noreferrer" style="text-decoration:none; padding:8px 16px; background-color:#FF0000; color:white; border-radius:4px;">YouTube Videosu</a>
   </p>
