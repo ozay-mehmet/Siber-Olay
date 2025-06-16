@@ -46,7 +46,7 @@ Siber Güvenlik Olay Yönetim Sistemi, güvenlik olaylarını tespit etme, anali
 ### 5. Olay Bildirme
 ![Olay Bildir](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/bildir.png)
 
-### 56 Olay Ayrıntıları 
+### 6. Olay Ayrıntıları 
 ![Olay Ayrıntıları](https://github.com/ozay-mehmet/Siber-Olay/blob/main/assets/images/ayr%C4%B1nt%C4%B1lar.png)
 
 ---
